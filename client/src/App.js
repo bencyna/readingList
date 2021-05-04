@@ -14,11 +14,11 @@ function App() {
       <Nav />
       <Router>
         <Switch>
-          <Route exact path={("/", "/books")}>
+          <Route exact path={["/", "/books"]}>
             <Books />
           </Route>
 
-          <Route path="/books/:id" children={<Child />} />
+          <Route exact path="/books/:id" children={<Detail />} />
           <Route path="*">
             <NoMatch />
           </Route>
