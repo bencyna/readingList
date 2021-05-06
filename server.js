@@ -17,7 +17,9 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/herokuPractice",
+  process.env.MONGODB_URI ||
+    "mongodb+srv://thiabutes:stunnedd16@init.akmlw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  // "mongodb://localhost/herokuPractice",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
